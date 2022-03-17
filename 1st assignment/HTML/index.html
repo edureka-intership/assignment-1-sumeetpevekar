@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>1st Assignment</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <span class="edureka-logo">e!</span>
+        </div>
+        <a class="login" href="#">login</a>
+        <button class="btn">create an account</button>
+    </div>
+    <div class="title">Breakfast Places in Mumbai</div>
+    <div class="flex-container">
+        <div class="flex-filter">
+            <div class="primary">Filters</div>
+            <div class="secondary">Select Location</div>
+            <select class="select" name="location" id="location">
+                <option value="dadar">Dadar</option>
+                <option value="kalyan">Kalyan</option>
+                <option value="dombivali">Dombivali</option>
+                <option value="ghatkopar">Ghatkopar</option>
+                <option value="null" selected>Select Location</option>
+            </select>
+            <div class="secondary">Cuisine</div>
+            <label for="northIndia">
+                <input class="checkbox" type="checkbox" name="north-india" id="northIndia">&nbsp;&nbsp;&nbsp;<p class="regular">North Indian</p>
+            </label><br>
+            <label for="southIndia">
+                <input class="checkbox" type="checkbox" checked name="south-india" id="southIndia">&nbsp;&nbsp;&nbsp;<p class="regular">South Indian</p>
+            </label><br>
+            <label for="chinese">
+                <input class="checkbox" type="checkbox" checked name="chinese" id="chinese">&nbsp;&nbsp;&nbsp;<p class="regular">Chinese</p> 
+            </label><br>
+            <label for="fastFood">
+                <input class="checkbox" type="checkbox" name="fast-food" id="fastFood">&nbsp;&nbsp;&nbsp;<p class="regular">Fast Food</p>
+            </label><br>
+            <label for="streetFood">
+                <input class="checkbox" type="checkbox" name="street-food" id="streetFood">&nbsp;&nbsp;&nbsp;<p class="regular">Street Food</p>
+            </label><br><br>
+            <div class="secondary">Cast For Two</div>
+            <label for="1">
+                <input type="radio" name="price" id="1" class="radio">&nbsp;&nbsp;&nbsp;<p class="regular">Less than 500</p>
+            </label><br>
+            <label for="2">
+                <input type="radio" name="price" id="2" class="radio">&nbsp;&nbsp;&nbsp;<p class="regular">500 to 1000</p>
+            </label><br>
+            <label for="3">
+                <input type="radio" name="price" id="3" class="radio">&nbsp;&nbsp;&nbsp;<p class="regular">1000 to 1500</p>
+            </label><br>
+            <label for="4">
+                <input type="radio" name="price" id="4" class="radio">&nbsp;&nbsp;&nbsp;<p class="regular">1500 to 2000</p>
+            </label><br>
+            <label for="5">
+                <input type="radio" name="price" id="5" class="radio">&nbsp;&nbsp;&nbsp;<p class="regular">2000+</p>
+            </label><br><br>
+            <div class="primary">Sort</div>
+            <label for="LtoH">
+                <input type="radio" name="sort" id="LtoH" class="radio">&nbsp;&nbsp;&nbsp;<p class="regular">Price low to high</p>
+            </label><br>
+            <label for="HtoL">
+                <input type="radio" name="sort" id="HtoL" class="radio">&nbsp;&nbsp;&nbsp;<p class="regular">Price high to low</p>
+            </label><br>
+        </div>
+        <div class="flex-shops">
+            <div class="shops">
+                <div class="shops-container">
+                    <div class="shop-img"></div>
+                    <div class="shop-content">
+                        <div class="shops-title">The Big Chill Cakery</div>
+                        <div class="menu-regular2">FORT</div>
+                        <div class="menu-regular">Shop 1, Plot D, Samruddhi Complex, Chincholi …</div>
+                    </div>
+                </div>
+                <div class="shop-cost">  
+                    <div class="menu">
+                        <div class="box1">
+                            <p class="menu-regular">CUISINES :</p>
+                            <p class="menu-regular">COST FOR TWO :</p>
+                        </div>
+                        <div class="box2">
+                            <p class="menu-regular2">Bakery</p>
+                            <p class="menu-regular2">&#8377;700</p>
+                        </div>
+                    </div>   
+                 </div>
+            </div>
+            <div class="shops">
+                <div class="shops-container">
+
+                    <div class="shop-img"></div>
+                    <div class="shop-content">
+                        <div class="shops-title">The Big Chill Cakery</div>
+                        <div class="menu-regular2">FORT</div>
+                        <div class="menu-regular">Shop 1, Plot D, Samruddhi Complex, Chincholi …</div>
+                    </div>
+                </div>
+                <div class="shop-cost">  
+                    <div class="menu">
+                        <div class="box1">
+                            <p class="menu-regular">CUISINES :</p>
+                            <p class="menu-regular">COST FOR TWO :</p>
+                        </div>
+                        <div class="box2">
+                            <p class="menu-regular2">Bakery</p>
+                            <p class="menu-regular2">&#8377;700</p>
+                        </div>
+                    </div>   
+                 </div>
+            </div>
+            <div class="page-flex">
+                <div class="pages numbers">&lt;</div>
+                <div class="pages numbers" id="active">1</div>
+                <div class="pages numbers">2</div>
+                <div class="pages numbers">3</div>
+                <div class="pages numbers">4</div>
+                <div class="pages numbers">5</div>
+                <div class="pages numbers">&gt;</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
